@@ -54,7 +54,12 @@
         
         .contenedor .header>img {
             width: 100%;
-            max-width: 900px;
+            max-width: 800px;
+            max-height: 100px;
+        }
+        
+        .contenedor .codigo>img {
+            max-height: 100px;
         }
         
         .footer {
@@ -91,6 +96,23 @@
         
         .social-link:hover svg {
             background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        @media screen and ( max-width: 850px) {
+            .contenedor {
+                grid-gap: 0px;
+            }
+            .contenedor .cupon>img {
+                max-width: 400px;
+            }
+            .contenedor .header>img {
+                max-height: 50px;
+                padding-bottom: 0px;
+                margin-bottom: 0;
+            }
+            .contenedor .codigo>img {
+                max-height: 100px;
+            }
         }
     </style>
 
